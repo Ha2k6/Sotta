@@ -1,0 +1,6 @@
+hdfs dfs -put localfile.txt /mydir
+
+
+
+hdfs dfs -mkdir /mydir
+
