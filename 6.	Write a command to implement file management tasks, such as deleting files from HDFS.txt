@@ -1,0 +1,20 @@
+hdfs dfs -mkdir /input
+
+
+
+
+
+hdfs dfs -put data.txt /input
+
+
+
+
+
+hdfs dfs -ls /input
+
+
+
+
+
+hdfs dfs -rm -r /input
+
