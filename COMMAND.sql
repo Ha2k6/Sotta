@@ -1,0 +1,9 @@
+CREATE TABLE students (
+    id INT,
+    name STRING,
+    age INT,
+    department STRING
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE;
