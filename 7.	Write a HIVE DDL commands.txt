@@ -1,0 +1,22 @@
+	HIVE DDL Commands
+
+CREATE DATABASE mydb;
+
+DROP DATABASE mydb;
+
+CREATE TABLE emp(id INT, name STRING, salary FLOAT);
+
+DROP TABLE emp;
+
+ALTER TABLE emp RENAME TO emp_new;
+
+ALTER TABLE emp_new ADD COLUMNS(dept STRING);
+
+ALTER TABLE emp_new REPLACE COLUMNS(id INT, name STRING);
+
+DESCRIBE emp_new;
+
+SHOW DATABASES;
+
+SHOW TABLES;
+
