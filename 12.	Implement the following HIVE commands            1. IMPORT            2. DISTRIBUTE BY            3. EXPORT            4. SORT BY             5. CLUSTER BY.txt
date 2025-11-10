@@ -1,0 +1,20 @@
+-- 1. IMPORT
+IMPORT TABLE sales FROM 'hdfs:/user/hive/warehouse/backup/sales';
+
+-- 2. DISTRIBUTE BY
+SELECT id, name, dept
+FROM employee
+DISTRIBUTE BY dept;
+
+-- 3. EXPORT
+EXPORT TABLE sales TO 'hdfs:/user/hive/warehouse/backup/sales';
+
+-- 4. SORT BY
+SELECT id, salary
+FROM employee
+SORT BY salary;
+
+-- 5. CLUSTER BY
+SELECT id, dept, salary
+FROM employee
+CLUSTER BY dept;
